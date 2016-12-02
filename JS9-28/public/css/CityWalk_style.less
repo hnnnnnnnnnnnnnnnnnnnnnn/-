@@ -1,0 +1,286 @@
+//等宽 居中
+.wm{
+	width: 1160px;
+	margin: 0 auto;
+}
+//左右浮动
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+//清除浮动
+.clb {
+    clear: both;
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+//行内快
+.dinb {
+    display: inline-block;
+}
+
+//块
+.db {
+    display: block;
+}
+.container{
+	width: 100%;
+}
+*{
+  font: 12px "微软雅黑";
+}
+//头部
+.header{
+	//最上面的导航
+	border-bottom:2px solid #45c79f;
+	.header_nav{
+		height: 30px;
+		background:#323232;
+	}
+	//搜索栏
+	.header_search{
+		.wm;
+		height: 40px;
+		padding:25px 0;
+		//border: 1px solid #000;
+		p{
+			.dinb;
+			margin-left: 25px;
+            vertical-align: middle;
+            //width: 113px;
+			img{
+				height:50%;
+				width:50%;
+			}
+		}
+		form{
+			.dinb;
+          margin-left: -70px;
+			input{
+				width:615px;
+				height:40px;
+				border-radius:20px;
+				border:none;
+				background-color:#f0f0f0;
+				font-size: 14px;
+				padding:0 25px 0 42px;
+                outline:none;
+			}
+		}
+		.search_rigth{
+			.dinb;
+          margin-left: 65px;
+          a{
+            .dinb;
+            color: #bbbbbb;
+            height: 26px;
+            line-height:26px;
+            margin-left: 12px;
+            //font-size: 0;
+            &:first-of-type{
+              border-right: 1px solid #e6e6e6;
+              padding-right:12px;
+            }
+          }
+		}
+
+	}
+	.nav{
+		.wm;
+		padding-bottom:8px;
+		margin-top: 10px;
+		ul{
+			li{
+				.dinb;
+				font-size: 14px;
+				color:#232323;
+				//line-height: 42px;
+				margin: 0 8px;
+				height: 26px;
+				left: 26px;
+				padding: 0 15px;
+				&:first-of-type{
+					border-right:1px solid #f0f0f0;
+					width: 115px;
+				}
+			}
+		}
+	}
+}
+//内容部分
+.main{
+	background-color:#333;
+	.mian_banner{
+		width: 100%;
+		height: 420px;
+		min-width:1160px;
+		position: relative;
+		overflow:hidden;
+		span{
+			background:url(../img/banner1-black-img1.jpg) top;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	//导航
+	.main_nav{
+		.wm;
+		margin-top: 35px;
+		background:#fff;
+		//padding:4px 20px 0 27px;
+		border:1px solid #ddd;
+		p{
+			padding:18px 0 28px 0;
+			a{
+				.dinb;
+				margin:0 0 14px 10px;
+				padding: 0 6px;
+				font-size: 14px;
+			}
+		}
+	}
+	.sort{
+		.wm;
+		margin-top:20px;
+		margin-bottom:20px;
+		ul{
+			height: 32px;
+			line-height: 32px;
+			font-size: 14px;
+			font-size: 0;
+			li{
+				.fl;
+				font-size: 14px;
+				color:#f5f5f5;
+				margin-right: 33px;
+				&:first-of-type{
+					color:#12af7e;
+				}
+				input{
+                    vertical-align:middle ;
+				}
+			}
+		}
+	}
+	.productlist{
+		.bigcard{
+			.wm;
+			margin-top:25px;
+			border:1px solid #33312e;
+			height: 270px;
+			background-color:#fff;
+			position:relative;
+			overflow:hidden; 
+			>img{
+				.fl;
+				position: absolute;
+				width: 400px;
+				height: 270px;	
+			}
+			.bigcard_info{
+				.fr;
+				width: 758px;
+				height: 270px;
+				.place{
+					margin: 12px 0 12px 20px;
+					border: 1px solid #ddd;
+					height: 30px;
+					line-height: 30px;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 14px;
+					color: #636363;
+					//margin: 7px 0;
+					border-top: 1px solid #ddd;
+					border-right: 1px solid #ddd;
+					border-bottom: 1px solid #ddd;
+					padding: 0 5px;
+					text-align: center;
+				}
+				.num{
+					height: 52px;
+					line-height: 52px;
+					font-size: 14px;
+					color: #666;
+					position: absolute;
+					top: 0;
+					right: 20px;
+					span{
+						color: #00b081;
+						padding: 0 5px 0 7px;
+					}
+				}
+				h2{
+					color:#000;
+					height: 60px;
+					padding: 0 20px;
+					line-height: 30px;
+					clear:both;
+					font-size: 26px;
+					overflow:hidden;
+				}
+				.list{
+					padding: 10px 0 0 20px;
+					display: block;
+					width: 460px;
+					height: 88px;
+					overflow: hidden;
+					float: left;
+					li{
+						height: 24px;
+						line-height: 24px;
+						color:#666;
+						width: 100%;
+					}
+				}
+				.bigPrice{
+					max-width: 246px;
+					//overflow: hidden;
+					float: right;
+					height: 38px;
+					padding-top: 44px;
+					padding-right: 20px;
+					font-size: 14px;
+					color: #999;
+					line-height: 38px;
+					.line{
+						text-decoration:line-through;
+					}
+					em{
+						font-size: 40px;
+						color: #ff7362;
+						padding: 0 4px 0 12px;
+						font-weight: 300;
+						position: relative;
+						top: 3px;
+						vertical-align: 2px;
+					}
+				}
+				.bottombar{
+						height: 56px;
+						float: right;
+						width: 174px;
+						height: 56px;
+						background-color: #ff7362;
+						color: #fff;
+						font-size: 18px;
+						text-align: center;
+						line-height: 56px;
+						margin-top: 16px;
+					}
+			}
+		}
+
+	}
+}
